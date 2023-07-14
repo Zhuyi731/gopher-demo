@@ -5,7 +5,6 @@ import React, {
   useContext,
   SetStateAction,
   Dispatch,
-  useEffect,
   ReactNode,
 } from "react"
 import { useRouter } from "next/navigation"

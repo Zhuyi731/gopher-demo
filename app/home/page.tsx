@@ -12,23 +12,23 @@ const Home = () => {
   }
 
   return (
-    <div className="home-container flex flex-col w-full h-screen bg-slate-300">
-      <div className="header h-24 w-full border bg-white ">
-        <Header />
-      </div>
-      <div className="content-container flex w-full h-full mt-4 mr-10 px-20">
-        <AsideMenu onChange={onMenuChange} />
-        <div className="content w-full h-full ml-4 bg-white rounded-sm p-10">
-          {currentMenu === "agent" ? (
-            <Agent />
-          ) : (
-            <>
-              <h3>Setting: ToDo</h3>
-            </>
-          )}
+      <div className="home-container flex flex-col w-full h-screen bg-slate-300">
+        <div className="header h-24 w-full border bg-white ">
+          <Header />
+        </div>
+        <div className="content-container flex w-full h-full mt-4 mr-10 px-20">
+          <AsideMenu onChange={onMenuChange} />
+          <div className="content w-full h-full ml-4 bg-white rounded-sm p-10">
+            {currentMenu === "agent" ? (
+              <Agent />
+            ) : (
+              <>
+                <h3>Setting: ToDo</h3>
+              </>
+            )}
+          </div>
         </div>
       </div>
-    </div>
   )
 }
 
